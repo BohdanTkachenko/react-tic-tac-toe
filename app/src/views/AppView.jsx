@@ -54,28 +54,36 @@ export class AppView extends React.Component {
   render() {
     return (
       <div>
-        <label>Rows: </label>
-        <input
-          onKeyUp={::this.setOptions}
-          type="number"
-          valueLink={this.linkState('rows')}
-        />
+        <div>
+          <label>Rows: </label>
+          <input
+            onKeyUp={::this.setOptions}
+            type="number"
+            valueLink={this.linkState('rows')}
+          />
+        </div>
 
-        <label>Cols: </label>
-        <input
-          onKeyUp={::this.setOptions}
-          type="number"
-          valueLink={this.linkState('cells')}
-        />
+        <div>
+          <label>Cols: </label>
+          <input
+            onKeyUp={::this.setOptions}
+            type="number"
+            valueLink={this.linkState('cells')}
+          />
+        </div>
 
-        <label>Win Cells: </label>
-        <input
-          onKeyUp={::this.setOptions}
-          type="number"
-          valueLink={this.linkState('winCells')}
-        />
+        <div>
+          <label>Win Cells: </label>
+          <input
+            onKeyUp={::this.setOptions}
+            type="number"
+            valueLink={this.linkState('winCells')}
+          />
+        </div>
 
-        <button onClick={::this.setOptions}>set options</button>
+        <div>
+          <button onClick={::this.setOptions}>set options</button>
+        </div>
 
         <TicTacToeView
           makeMove={this.props.makeMove}
