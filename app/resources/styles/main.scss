@@ -1,0 +1,65 @@
+@import 'normalize';
+
+$bg-color: #d1d1d1;
+$cell-color: #deb787;
+$cell-color-draw: #526abf;
+$cell-color-win: #8cc982;
+
+body {
+  background-color: $bg-color;
+}
+
+.clear {
+  clear: both;
+}
+
+.tic-tac-toe {
+  border-radius: 5px;
+  margin: 10px 0 0 10px;
+
+  .tic-tac-toe-row {
+    margin-bottom: 10px;
+    width: 100%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .tic-tac-toe-cell {
+      background-color: $cell-color;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: 75%;
+      border-radius: 5px;
+      box-shadow: 3px 3px 10px -4px rgba(0, 0, 0, .75);
+      float: left;
+      height: 75px;
+      margin-right: 10px;
+      width: 75px;
+    }
+
+    .tic-tac-toe-cell:last-child {
+      margin-right: 0;
+    }
+
+    .tic-tac-toe-cell-x {
+      background-image: url('/x.png');
+    }
+
+    .tic-tac-toe-cell-o {
+      background-image: url('/o.png');
+    }
+
+    .tic-tac-toe-cell-can-move {
+      cursor: pointer;
+    }
+
+    .tic-tac-toe-cell-win {
+      background-color: $cell-color-win;
+    }
+
+    .tic-tac-toe-cell-draw {
+      background-color: $cell-color-draw;
+    }
+  }
+}
