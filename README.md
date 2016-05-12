@@ -1,7 +1,7 @@
 react-tic-tac-toe
 =================
 
-Simple tic tac toe game implemented in React.js
+Simple tic tac toe game with any number of rows, cells and winning cells implemented in React.js
 
 Demo: http://bohdantkachenko.com/react-tic-tac-toe/
 
